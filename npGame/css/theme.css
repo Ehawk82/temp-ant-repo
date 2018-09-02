@@ -1,0 +1,398 @@
+@media only screen and (max-width: 600px) {
+    body, html, .startBtn_full, .contBtn_full, .startOverBtn_full {
+	    font-size:18px;
+    }
+    .colorBoxes {
+	   width:20px;
+	   height:20px;
+    
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    body, html, .startBtn_full, .contBtn_full, .startOverBtn_full {
+	    font-size:22px;
+    }
+    .colorBoxes {
+	   width:30px;
+	   height:30px;
+
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    body, html, .startBtn_full, .contBtn_full, .startOverBtn_full {
+	    font-size:25px;
+    }
+    .colorBoxes {
+	   width:40px;
+	   height:40px;
+
+    }
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    body, html, .startBtn_full, .contBtn_full, .startOverBtn_full {
+	    font-size:30px;
+    }
+    .colorBoxes {
+	   width:50px;
+	   height:50px;
+
+    }
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+/*DOM*/
+    body, html, .startBtn_full, .contBtn_full, .startOverBtn_full {
+	    font-size:38px;
+    }
+	.colorBoxes {
+	   width:60px;
+	   height:60px;
+
+    }
+
+}
+
+/*DOM*/
+body, html {
+	transition:.5s all;
+	background-image:url("images/earth/concrete.jpg");
+	background-size:cover;
+	background-position:center;
+	background-repeat:repeat-y;
+	margin:0;
+	padding:0;
+	overflow:hidden;
+}
+h1 {
+	background-color:#FFF;
+	width:108%;
+	margin-left: -4%;
+	margin-top:0;
+	text-indent:8%;
+	font-family: 'Open Sans', sans-serif; font-size: 18px; font-weight: 300;
+    box-shadow:0 0 10px #000;
+	cursor: context-menu ;
+	z-index:  ;
+}
+footer {
+	clear: both;
+    border: 1px groove #aaaaaa;
+    background: rgba(0,0,0,0.6);
+    color: rgba(225,225,225,0.5);
+    padding: 0;
+    text-align: center;
+    vertical-align: middle;
+    line-height: normal;
+	font-size:18px;
+    margin: 0;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+	
+}
+button {
+	background:grey;
+	border:none;
+	outline-color:#fff;
+	cursor:pointer;
+	border-radius:2px;
+}
+input:focus{
+
+}
+footer {
+	cursor: context-menu ;
+}
+::selection {
+ 
+    background: transparent;
+}
+/* CLASS */
+.adHolder {
+	position:fixed;
+	bottom:15px;
+    display:inline-table;
+	width:70%;
+    left:15%;
+	text-align:center;
+	background-color:#FFF;
+	cursor:pointer;
+	border-radius:2px;
+}
+.uFrame {
+	transition:1s all;
+
+	margin: 0;
+	height:75vh;
+}
+.uFrame_full {
+	transition:1s all;
+	margin: 0;
+	height:75vh;
+}
+.dvBreak {
+	background:#D0E8D0;
+	height:25px;
+}
+.startBtn, .contBtn, .startOverBtn {
+	transition:.6s all;
+	background-color:#D0E8D0;
+	position:absolute;
+	top:104%;
+	left:35%;
+	height:auto;
+	width:30%;
+}
+.startBtn_full, .contBtn_full {
+	transition:.6s all;
+	background-color:#D0E8D0;
+	position:absolute;
+	top:24%;
+	left:35%;
+	height:auto;
+	width:30%;
+	
+}
+.startOverBtn_full {
+	transition:.6s all;
+	background-color:#D0E8D0;
+	position:absolute;
+	top:54%;
+	left:35%;
+	height:auto;
+	width:30%;
+}
+.qHolder {
+	transition:.6s all;
+	background-color: white;
+	height:100%;
+	width:100%;
+	top:101%;
+	left:0;
+    position:absolute;
+}
+.qHolder_full {
+	transition:.6s all;
+	background-color: white;
+	height:100%;
+	width:100%;
+	top:0;
+	left:0;
+    position:absolute;
+}
+.yesBtn, .noBtn {
+	width:10%;
+	height:100px;
+	margin:0  20%;
+}
+.progressBar {
+	transition:.6s all;
+    width: 80%;
+	line-height: 30px;
+	margin:0 auto;
+    margin-top:201%;
+    background-color: #F2FFF5;
+    overflow:hidden;
+	border-radius:15px;
+	border:2px groove silver;
+	margin-bottom:500%;
+}
+.progressBar_full {
+	transition:.6s all;
+    width: 80%;
+	line-height: 30px;
+	margin:0 auto;
+    margin-top:10%;
+    background-color: #F2FFF5;
+    overflow:hidden;
+	border-radius:15px;
+	border:2px groove silver;
+	margin-bottom:500%;
+}
+.userPrefHolder {
+	transition:.6s all;
+	height:102%;
+	background-color:#fff;
+	margin-top:100vh;
+	color:rgb(200,200,200);
+}
+.userPrefHolder_full {
+	transition:.6s all;
+	height:102%;
+	background-color:#fff;
+	background-image:url("images/earth/dirtSurface.png");
+	background-size:cover;
+	background-position:center;
+	background-repeat:no-repeat;
+	margin-top:0;
+	color:rgb(200,200,200);
+	text-indent:1.5vw;
+}
+.colorHolder {
+	transition:.6s all;
+	padding-left:1vw;
+    display: flex;
+    position:absolute;
+}
+
+.colorBoxes {
+    transition:.6s all;
+	cursor:pointer;
+	margin-left:5px;
+	border-radius:3px;
+	border:3px dotted rgba(192,192,192,0.5);
+	z-index:99;
+}
+.antHolder {
+	display:flex;
+	margin-top:-110px;
+    height:100%;
+  
+}
+.ants {
+	transition:.05s transform;
+    position:relative;
+	width:7vh;
+	height:7vh;
+	cursor:none;
+	z-index:100;
+}
+.thought {
+	height:3vh;
+	width:3vh;
+	z-index:101;
+	background-image:url("images/ant/thought.png");
+	background-size:cover;
+	background-position:center;
+	background-repeat:no-repeat;
+}
+/* ID */
+#dvContain {
+	transition:.5s all;
+	box-shadow:0 0 5px #000, 0 0 4px #000, 0 0 5px #000;
+	background-color:black;
+	height:77vh;
+	padding:.1% 0;
+}
+
+#meter {
+    width: 0;
+    height: 20px;
+    background-color: #52A854;
+    
+}
+#blueBox {
+	background-color:rgb(80, 91, 255);
+
+	
+}
+#redBox {
+	background-color:rgb(255, 63, 69);
+	
+}
+#pinkBox {
+	background-color:rgb(255, 135, 135);
+	
+}
+#orangeBox {
+	background-color:rgb(255, 176, 56);
+	
+}
+#greenBox {
+	background-color:rgb(93, 255, 106);
+	
+}
+#yellowBox {
+	background-color:rgb(254, 255, 72);
+	
+}
+#purpleBox {
+	background-color:rgb(157, 67, 255);
+	
+}
+#blackBox {
+	background-color:rgb(0, 0, 0);
+	
+}
+#nullAnt {
+	background-image:url("images/ant/nullAnt.png");
+	background-size:cover;
+	background-position:center;
+	background-repeat:no-repeat;
+}
+
+#blueAnt {
+	background-image:url("images/ant/blueAnt.png");
+	background-size:cover;
+	background-position:center;
+	background-repeat:no-repeat;
+}
+
+#redAnt {
+	background-image:url("images/ant/redAnt.png");
+	background-size:cover;
+	background-position:center;
+	background-repeat:no-repeat;
+	
+}
+
+#pinkAnt {
+	background-image:url("images/ant/pinkAnt.png");
+	background-size:cover;
+	background-position:center;
+	background-repeat:no-repeat;
+	
+}
+
+#orangeAnt {
+	background-image:url("images/ant/orangeAnt.png");
+	background-size:cover;
+	background-position:center;
+	background-repeat:no-repeat;
+	
+}
+
+#greenAnt {
+	background-image:url("images/ant/greenAnt.png");
+	background-size:cover;
+	background-position:center;
+	background-repeat:no-repeat;
+	
+}
+
+#yellowAnt {
+	background-image:url("images/ant/yellowAnt.png");
+	background-size:cover;
+	background-position:center;
+	background-repeat:no-repeat;
+	
+}
+
+#purpleAnt {
+	background-image:url("images/ant/purpleAnt.png");
+	background-size:cover;
+	background-position:center;
+	background-repeat:no-repeat;
+	
+}
+
+#blackAnt {
+	background-image:url("images/ant/blackAnt.png");
+	background-size:cover;
+	background-position:center;
+	background-repeat:no-repeat;
+	
+}
+
+
+#spnArrow {
+	cursor:pointer;
+}
+/* KEYFRAMES */
