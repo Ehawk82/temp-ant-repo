@@ -8,7 +8,7 @@
 		antSpeed: 5,
 		antExp: 0
 	};
-	currentNeed = ["\u1F349", "U+1F969", "\u1F969", ""];
+	currentNeed = ["\u{1F352}", "\u{1F34E}", "\u{1F969}", "\u{1F344}", "\u{1F36C}", "\u{1F36B}", "\u{1F355}", "\u{1F340}"];
 /* Begin myUI */	
 	myUI = {
 /* return functions */
@@ -64,7 +64,9 @@
 				
 			if (aBr < 0) {
                 //down rezize adjuster
-				
+
+                //console.log(ant.style.bottom);
+			    ant.style.bottom = -upH + "px";
 			}
 			if (aL[0] > upW) {
 				//right resize adjuster
@@ -73,22 +75,9 @@
 			
 			} else { 
 			
-			return false;
+			    return false;
 			
 			}
-			/*
-			var userPrefHolder = myUI.bySel(".userPrefHolder_full");
-			if (userPrefHolder) {
-			function outputsize() {
-                     //width.value = box.offsetWidth
-                     //height.value = box.offsetHeight
-					 console.log(userPrefHolder.clientWidth);
-                }
-                outputsize()
-
-                new ResizeObserver(outputsize).observe(userPrefHolder)
-			} else { return false;}
-			*/
 		},
 		loadFrameStarter: () => {
 			var uFrame = myUI.createEle("div");
@@ -246,7 +235,7 @@
 			colorHolder.appendChild(purpleBox);
 			colorHolder.appendChild(blackBox);
 			
-			userPrefHolder.innerHTML = "<span id='spnArrow' class='menu_open'>🔺</span><br />";
+			userPrefHolder.innerHTML = "<span id='spnArrow' class='menu_open'>ðŸ”º</span><br />";
 			userPrefHolder.className = "userPrefHolder";
 			
 			userPrefHolder.appendChild(colorHolder);
@@ -381,9 +370,9 @@
 			return () => {
 			    var antHolder = ant.parentNode,
 				    aL = ant.style.left.split("px"),
-					aLp = +aL[0] - +40,
+					aLp = +aL[0] - +45,
 					aD = ant.style.bottom.split("px"),
-				    aDp = +aD[0] + +20,
+				    aDp = +aD[0] + +45,
 					thought = myUI.createEle("div");
 				var rand = currentNeed[Math.floor(Math.random() * currentNeed.length)];
 				
@@ -404,13 +393,13 @@
 				
 				if (spnArrow.className === "menu_open") {
 					spnArrow.className = "menu_closed";
-					spnArrow.innerHTML = "🔻";
+					spnArrow.innerHTML = "ðŸ”»";
 				    spnParent.childNodes[2].style.marginTop = "-300px";
 					
 					
 				} else {
 					spnArrow.className = "menu_open";
-					spnArrow.innerHTML = "🔺";
+					spnArrow.innerHTML = "ðŸ”º";
                     spnParent.childNodes[2].style.marginTop = "0";
 				}
 			}
